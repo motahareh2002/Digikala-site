@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Digikala</title>
+        <!-- styles -->
+        <link rel="stylesheet" href="../../dist/output.css">
+        <!-- fontawesome -->
+        <link rel="stylesheet"
+            href="../css/font-awesome-4.7.0/css/font-awesome.css">
+    </head>
+    <body>
+        <header>
+            <div class="flex justify-between my-5 mx-5">
+                <div class="flex w-3/4">
+                    <a href="#">
+                        <img
+                            src="https://www.digikala.com/statics/img/svg/logo.svg"
+                            alt="لوگوی دیجیکالا"
+                            class="ml-10 mt-1">
+                    </a>
+                    <form action="" class="w-4/5 relative">
+                        <button class="bg-gray-200 p-2 absolute rounded-lg">
+                            <i class="fa fa-search text-gray-500"></i></button>
+                        <input type="text" placeholder="جستجو"
+                            class="w-8/12 border-none focus:outline-0
+                            bg-gray-200 pr-9 p-2 rounded-lg">
+                    </form>
+                </div>
+
+
+                <div class="w-1/4 mr-auto">
+                    <a href="./login.html">
+                        <button class="border border-gray-300 px-2 py-1
+                            rounded-lg
+                            mr-44" type="button" id="login">
+                            <i class="fa fa-sign-in rotate-180"></i>
+                            <span>ورود | ثبت نام</span>
+                        </button>
+                    </a>
+                    <button class="">
+                        <img src="../../images/header/cart-outline.svg" alt="سبد
+                            خرید"
+                            class="w-11 h-6 mr-1">
+                    </button>
+
+                </div>
+            </div>
+
+
+            <div class="flex justify-between">
+                <nav>
+                    <ul class="flex">
+                        <li class="mx-3 text-sm" id="allProducts">
+                            <a href="#" class="transition ease-in-out
+                                duration-500 hover:border-b-2 border-red-500
+                                pb-2">
+                                <i class="fa fa-navicon"></i>
+                                <span>دسته بندی کالاها</span>
+                            </a>
+                        </li>
+                        <li class="mx-3 text-sm">
+                            <a href="#" class="flex transition ease-in-out
+                                duration-500 hover:border-b-2 border-red-500
+                                pb-2">
+
+                                <img src="../../images/header/bx-store-alt.svg"
+                                    alt="">
+                                <span>سوپرمارکت</span>
+                            </a>
+                        </li>
+                        <li class="mx-3 text-sm">
+                            <a href="#" class="transition ease-in-out
+                                duration-500 hover:border-b-2 border-red-500
+                                pb-2">
+                                <i class="fa fa-superpowers"></i>
+                                <span>پر فروش ترین ها</span>
+                            </a>
+                        </li>
+                        <li class="mx-3 text-sm">
+                            <a href="#" class="flex transition ease-in-out
+                                duration-500 hover:border-b-2 border-red-500
+                                pb-2">
+                                <img src="../../images/header/bxs-discount.svg"
+                                    alt="">
+                                <span>تخفیف ها و پیشنهادها</span>
+                            </a>
+                        </li>
+                        <li class="mx-3 text-sm">
+                            <a href="#" class="flex transition ease-in-out
+                                duration-500 hover:border-b-2 border-red-500
+                                pb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round"
+                                        stroke-linejoin="round" d="M9
+                                        14.25l6-6m4.5-3.493V21.75l-3.75-1.5-3.75
+                                        1.5-3.75-1.5-3.75
+                                        1.5V4.757c0-1.108.806-2.057
+                                        1.907-2.185a48.507 48.507 0 0111.186
+                                        0c1.1.128 1.907 1.077 1.907 2.185zM9.75
+                                        9h.008v.008H9.75V9zm.375 0a.375.375 0
+                                        11-.75
+                                        0 .375.375 0 01.75 0zm4.125
+                                        4.5h.008v.008h-.008V13.5zm.375
+                                        0a.375.375 0
+                                        11-.75 0 .375.375 0 01.75 0z" />
+                                    </svg>
+
+                                    <span>شگفت انگیزها</span>
+                                </a>
+                            </li>
+                            <li class="mx-3 text-sm">
+                                <a href="#" class="transition ease-in-out
+                                    duration-500 hover:border-b-2 border-red-500
+                                    pb-2">
+                                    <span>سوالی دارید؟</span>
+                                </a>
+                            </li>
+                            <li class="mx-3 text-sm">
+                                <a href="#" class="transition ease-in-out
+                                    duration-500 hover:border-b-2 border-red-500
+                                    pb-2">
+                                    <span>در دیجی کالا بفروشید!</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="ml-5 text-sm">
+                        <a href="#" class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round"
+                                        stroke-linejoin="round" d="M19.5 10.5c0
+                                        7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5
+                                        10.5a7.5 7.5 0 1115 0z" />
+                                    </svg>
+                                    <span>شهر خود را انتخاب کنید !</span>
+                                </a>
+                            </div>
+                        </div>
+                    </header>
+
+
+        <div class="show-menu bg-slate-50 mx-5 rounded-lg hidden">
+            <a href="#" class="flex my-5 text-gray-800 rounded-lg hover:text-red-600 hover:bg-stone-300 p-3 w-1/12">
+                <img
+                    src="../../images/header/allProduct/bx-laptop.svg"
+                    alt="">
+                <span>کالای دیجیتال</span>
+            </a>
+            <a href="#" class="flex my-5 text-gray-700 hover:text-red-600 hover:bg-stone-300 p-3 w-1/12">
+                <img src="../../images/header/allProduct/bx-mobile-alt.svg">
+                <span>موبایل</span>
+            </a>
+            <a href="#" class="flex my-5 text-gray-800 hover:text-red-600 hover:bg-stone-300 p-3 w-1/12">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round" d="M21.75 6.75a4.5
+                                    4.5 0 01-4.884
+                                    4.484c-1.076-.091-2.264.071-2.95.904l-7.152
+                                    8.684a2.548 2.548 0
+                                    11-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5
+                                    4.5 0 016.336-4.486l-3.276 3.276a3.004 3.004
+                                    0 002.25 2.25l3.276-3.276c.256.565.398
+                                    1.192.398 1.852z" />
+                                    <path stroke-linecap="round"
+                                        stroke-linejoin="round" d="M4.867
+                                        19.125h.008v.008h-.008v-.008z" />
+                </svg>
+                <span>ابزار،لوازم ساختمانی </span>
+            </a>
+            <a href="#" class="flex my-5 text-gray-800 hover:text-red-600 hover:bg-stone-300 p-3 w-1/12">
+                <img src="../../images/header/allProduct/bxs-t-shirt.svg">
+                <span>مد و پوشاک</span>
+            </a>
+            <a href="" class="flex my-5 text-gray-800 hover:text-red-600 hover:bg-stone-300 p-3 w-1/12">
+                <img src="../../images/header/bx-store-alt.svg">
+                <span>کالاهای سوپر مارکتی</span>
+            </a>
+            <a href="#" class="flex my-5 text-gray-800 hover:text-red-600 hover:bg-stone-300 p-3 w-1/12">
+                <img src="../../images/header/allProduct/bx-leaf.svg">
+                <span>محصولات بومی و محلی</span>
+            </a>
+            <a href="#" class="flex my-5 text-gray-800 hover:text-red-600 hover:bg-stone-300 p-3 w-1/12">
+                <img src="../../images/header/allProduct/bx-child.svg">
+                <span>اسباب بازی ، کودک و نوزاد</span>
+            </a>
+            <a href="#" class="flex my-5 text-gray-800 hover:text-red-600 hover:bg-stone-300 p-3 w-1/12">
+                <img src="../../images/header/allProduct/bxs-car-mechanic.svg">
+                <span>خودرو و موتور سیکلت</span>
+            </a>
+            <a href="#" class="flex my-5 text-gray-800 hover:text-red-600 hover:bg-stone-300 p-3 w-1/12">
+                <img src="../../images/header/allProduct/bx-heart.svg">
+                <span>زیبایی و سلامت</span>
+            </a>
+            <a href="#" class="flex my-5 text-gray-800 hover:text-red-600 hover:bg-stone-300 p-3 w-1/12">
+                <img src="../../images/header/allProduct/bx-chair.svg">
+                <span>خانه و آشپزخانه</span>
+            </a>
+            <a href="#" class="flex my-5 text-gray-800 hover:text-red-600 hover:bg-stone-300 p-3 w-1/12">
+                <img src="../../images/header/allProduct/bx-pencil.svg">
+                <span>کتاب ، لوازم تحریر و هنر</span>
+            </a>
+            <a href="#" class="flex my-5 text-gray-800 rounded-lg hover:text-red-600 hover:bg-stone-300 p-3 w-1/12">
+                <img src="../../images/header/allProduct/bxs-basketball.svg">
+                <span>ورزش و سلامت</span>
+            </a>
+                        
+        </div>
+
+        <main></main>
+        <footer></footer>
+        <script src="../js/index.js"></script>
+    </body>
+</html>
