@@ -516,6 +516,40 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .absolute {
   position: absolute;
 }
@@ -615,16 +649,16 @@ video {
   height: 1.5rem;
 }
 
-.w-1\/12 {
-  width: 8.333333%;
-}
-
 .w-1\/4 {
   width: 25%;
 }
 
 .w-11 {
   width: 2.75rem;
+}
+
+.w-2\/12 {
+  width: 16.666667%;
 }
 
 .w-3\/4 {
@@ -645,10 +679,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-2\/12 {
-  width: 16.666667%;
 }
 
 .rotate-180 {
@@ -809,6 +839,11 @@ video {
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#imageSwiper {
+  height: 400px;
+  width: 100%;
 }
 
 .hover\:border-b-2:hover {
