@@ -12,6 +12,62 @@ function hiddenMenuAllProduct() {
 allProducts.addEventListener("mouseout", hiddenMenuAllProduct)
 allProducts.addEventListener("mouseover", showMenuAllProduct)
 
+// choose location
+let chooseLocation = $.querySelector(".location")
+let selectCitiesForChoose = $.querySelector("#selectCitiesForChoose")
+let closeSelectChooseLoc = $.querySelector("#closeSelectChooseLoc")
+let selectBox = $.querySelector(".ChooseLoc")
+let eparchy = [
+    "آذزبایجان شرقی",
+    "آذربایجان غربی",
+    "اردبیل",
+    "اصفحان",
+    "البرز",
+    "ایلام",
+    "بوشهر",
+    "تهران",
+    "چهارمحال و بختیاری",
+    "خراسان شمالی",
+    "خراسان رضوی",
+    "خراسان جنوبی",
+    "خوزستان",
+    "زنجان",
+    "سمنان",
+    "سیستان و بلوچستان",
+    "فارس",
+    "قزوین",
+    "قم",
+    "کردستان",
+    "کرمان",
+    "کرمانشاه",
+    "کهکلویه و بویراحمر",
+    "گلستان",
+    "گیلان",
+    "لرستان",
+    "مازندران",
+    "مرکزی",
+    "هرمزگان",
+    "همدان",
+    "یزد",
+]
+function insertLocation() {
+    for (let i = 0; i < eparchy.length - 1; i++){
+        selectCitiesForChoose.innerHTML += `<option value=${eparchy[i]}>${eparchy[i]}</option>`
+    }
+    selectBox.classList.remove("hidden")
+    
+}
+function closeSelectBox() {
+    selectBox.classList.add("hidden")
+}
+chooseLocation.addEventListener("click",insertLocation)
+closeSelectChooseLoc.addEventListener("click", closeSelectBox)
+selectCitiesForChoose.addEventListener("change", () => {
+    chooseLocation.innerHTML = selectCitiesForChoose.value
+    selectBox.classList.add("hidden")
+})
+
+
 // swiper container
 let imagesOfSwiper = [
     {

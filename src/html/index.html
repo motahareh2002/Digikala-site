@@ -133,25 +133,12 @@
 
                     <div class="ml-5 text-sm">
                         <a href="#" class="flex">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                                    <path stroke-linecap="round"
-                                        stroke-linejoin="round" d="M19.5 10.5c0
-                                        7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5
-                                        10.5a7.5 7.5 0 1115 0z" />
-                                    </svg>
-                                    <span>شهر خود را انتخاب کنید !</span>
-                                </a>
-                            </div>
-                        </div>
-                    </header>
-
-
-        <div class="show-menu bg-slate-50 mx-5 rounded-lg hidden">
+                            <img src="../../images/header/location-outline.svg" class="w-7 h-7">
+                            <span class="location">شهر خود را انتخاب کنید !</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="show-menu bg-slate-50 mx-5 rounded-lg hidden">
                         <a href="#" class="flex text-gray-800 rounded-lg
                             hover:text-red-600 hover:bg-stone-300 p-3 w-2/12">
                             <img
@@ -249,7 +236,17 @@
                                     <span>ورزش و سلامت</span>
                                 </a>
 
-                            </div>
+                </div>
+                <div class="ChooseLoc mr-72 hidden">
+                    <select class="mr-80 p-3 w-4/12 relative focus:outline-0" id="selectCitiesForChoose">
+                        <option value="">انتخاب شهر</option>
+                    </select>
+                    <i class="fa fa-close absolute left-1/3 top-32 cursor-pointer" id="closeSelectChooseLoc"></i>
+                </div>
+        </header>
+
+
+        
 
         <main>
             <div id="swiper-container" class="">
