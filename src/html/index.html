@@ -237,11 +237,14 @@
                                 </a>
 
                 </div>
-                <div class="ChooseLoc mr-72 hidden">
-                    <select class="mr-80 p-3 w-4/12 relative focus:outline-0" id="selectCitiesForChoose">
-                        <option value="">انتخاب شهر</option>
-                    </select>
-                    <i class="fa fa-close absolute left-1/3 top-32 cursor-pointer" id="closeSelectChooseLoc"></i>
+
+                <div class="ChooseLoc hidden bg-white w-1/3 mx-auto px-5 py-3 rounded-lg">
+                    <div id="logoNameLocation" class="flex justify-between border-b-2 py-3">
+                        <p class="">شهر خود را انتخاب کنید</p>
+                        <i class="fa fa-close cursor-pointer" id="closeSelectChooseLoc"></i>
+                    </div>
+                    <ul class="overflow-y-scroll h-72" id="selectCitiesForChoose"></ul>
+                    
                 </div>
         </header>
 
