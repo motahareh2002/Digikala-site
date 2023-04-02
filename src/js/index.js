@@ -1,16 +1,21 @@
 "use strict"
+
 const $ = document;
+
 // show / onshow allProduct
 const allProducts = $.querySelector("#allProducts")
 const show = $.querySelector(".show-menu")
 function showMenuAllProduct() {
     show.classList.remove("hidden")
+    show.classList.add("fixed","z-50","w-1/4")
 }
 function hiddenMenuAllProduct() {
     show.classList.add("hidden")
 }
-allProducts.addEventListener("mouseout", hiddenMenuAllProduct)
-allProducts.addEventListener("mouseover", showMenuAllProduct)
+$.body.addEventListener("mouseleave",hiddenMenuAllProduct)
+allProducts.addEventListener("mousemove", showMenuAllProduct)
+
+
 
 // choose location
 let chooseLocation = $.querySelector(".location")
@@ -71,10 +76,9 @@ function insertLocation() {
 function closeSelectBox() {
     selectBox.classList.add("hidden")
 }
-
-
 chooseLocation.addEventListener("click", insertLocation)
 closeSelectChooseLoc.addEventListener("click", closeSelectBox)
+
 
 
 
