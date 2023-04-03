@@ -154,3 +154,33 @@ function backwardSwiperImage() {
 }
 toRightImgSwiper.addEventListener("click", forwardSwiperImage)
 toLeftImgSwiper.addEventListener("click", backwardSwiperImage)
+
+
+//swiper silder
+const swiperSlide = $.querySelector(".swiper-slide"),
+arrowIcon = $.querySelectorAll(".icon-swiper-slide i"),
+firstImg = $.querySelectorAll(".swiper-slide-banner")[0]
+let isDragStart = false, prevPageX, prevScrollLeft;
+let firstImgWidth = firstImg.clientWidth + 14
+arrowIcon.forEach(icon => {
+    icon.addEventListener("click", () => {
+        swiperSlide.scrollLeft += icon.id == "prevImageSlide" ? -firstImgWidth : firstImgWidth
+    })
+})
+function dragStart(e) {
+    isDragStart = true
+    prevPageX = e.pageX
+    prevScrollLeft = swiperSlide.scrollLeft
+}
+function dragging(e) {
+    if (!isDragStart) return;
+    e.preventDefault()
+    let positionDiff = e.pageX - prevPageX
+    swiperSlide.scrollLeft = prevScrollLeft - positionDiff
+}
+function dragstop() {
+    isDragStart = false
+}
+swiperSlide.addEventListener("mousedown", dragStart)
+swiperSlide.addEventListener("mousemove", dragging)
+swiperSlide.addEventListener("mouseup", dragstop)
