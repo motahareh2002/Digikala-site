@@ -196,3 +196,22 @@ scrollToTopLink.addEventListener("click",()=>{
         behavior: "smooth",
       });
 })
+
+//email in Footer
+let emailFooterBlur = $.querySelector("#emailFooterBlur")
+let emailFooterInput = $.querySelector(".emailFooterInput")
+let submitEmail = $.querySelector(".submitEmail")
+
+function emailBlur() {
+    if (emailFooterInput.value.length === 0) {
+        emailFooterBlur.classList.remove("hidden")
+    }
+    else {
+        emailFooterBlur.classList.add("hidden") 
+        submitEmail.classList.remove("bg-gray-300")
+        submitEmail.classList.add("bg-red-500")
+    }
+
+}
+
+emailFooterInput.addEventListener("blur",emailBlur)
