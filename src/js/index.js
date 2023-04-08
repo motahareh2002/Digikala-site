@@ -184,3 +184,15 @@ function dragstop() {
 swiperSlide.addEventListener("mousedown", dragStart)
 swiperSlide.addEventListener("mousemove", dragging)
 swiperSlide.addEventListener("mouseup", dragstop)
+
+
+// Scroll To Top
+
+let scrollToTopLink = $.querySelector(".scrollToTopLink")
+scrollToTopLink.addEventListener("click",()=>{
+    window.scroll({
+        top: 100,
+        left: 100,
+        behavior: "smooth",
+      });
+})
