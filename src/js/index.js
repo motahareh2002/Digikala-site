@@ -215,3 +215,20 @@ function emailBlur() {
 }
 
 emailFooterInput.addEventListener("blur",emailBlur)
+
+
+// digikala info in footer
+let wiewMore = $.querySelector("#wiewMore")
+let moreInfoInFooter = $.querySelector("#moreInfoInFooter")
+let colseMoreInfo = $.querySelector("#colseMoreInfo")
+
+function moreInfo(){
+    wiewMore.classList.add("hidden")
+    moreInfoInFooter.classList.remove("hidden")
+}
+function hideMoreInfo(){
+    wiewMore.classList.remove("hidden")
+    moreInfoInFooter.classList.add("hidden")
+}
+wiewMore.addEventListener("click",moreInfo)
+colseMoreInfo.addEventListener("click",hideMoreInfo)
