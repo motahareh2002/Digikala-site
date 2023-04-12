@@ -3,6 +3,9 @@
 const inputLogin = document.querySelector("#inputLogin")
 const userBlur = document.querySelector("#userBlur")
 const regester = document.querySelector("#regester")
+const login = document.querySelector("#login")
+const btnLogin = document.querySelector("#btnLogin")
+
 function usernameBlur() {
     if (inputLogin.value.length === 0) {
         userBlur.classList.remove("hidden")
@@ -38,4 +41,15 @@ function usernameBlur() {
     }
 }
 
+
+function clickBtn(){
+    if(inputLogin.value !== ''){
+        login.href = "../html/codeLogin.html"
+        localStorage.setItem("phoneOrEmail",inputLogin.value)
+    }
+    // console.log(inputLogin.value);
+    
+}
 inputLogin.addEventListener("blur",usernameBlur)
+btnLogin.addEventListener("click",clickBtn)
+

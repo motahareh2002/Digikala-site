@@ -1,7 +1,8 @@
 "use strict";
 
 const $ = document;
-
+// show user Account
+let userInfo = $.querySelector(".userInfo")
 // show / onshow allProduct
 const allProducts = $.querySelector("#allProducts");
 const show = $.querySelector(".show-menu");
@@ -260,3 +261,5 @@ function hideMoreInfo() {
 }
 wiewMore.addEventListener("click", moreInfo);
 colseMoreInfo.addEventListener("click", hideMoreInfo);
+
+
